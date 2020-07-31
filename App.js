@@ -7,28 +7,16 @@
  */
 
 import React from "react";
-import {
-  StyleSheet,
-  View,
-  Text,
-  TouchableOpacity,
-  Platform,
-  PermissionsAndroid
-} from "react-native";
-import MapView, {
-  Marker,
-  AnimatedRegion,
-  Polyline,
-  PROVIDER_GOOGLE
-} from "react-native-maps";
+import { StyleSheet, View, Text, TouchableOpacity, Platform, PermissionsAndroid } from "react-native";
+import MapView, { Marker, AnimatedRegion, Polyline, PROVIDER_GOOGLE } from "react-native-maps";
 import haversine from "haversine";
 
 // const LATITUDE = 29.95539;
 // const LONGITUDE = 78.07513;
-const LATITUDE_DELTA = 0.009;
-const LONGITUDE_DELTA = 0.009;
-const LATITUDE = 37.78825;
-const LONGITUDE = -122.4324;
+const LATITUDE_DELTA = 0.002;//0.009;
+const LONGITUDE_DELTA = 0.002;//0.009;
+const LATITUDE = 19.112105;//19.109008;//37.78825;
+const LONGITUDE = 72.882333;//-122.4324;
 
 class AnimatedMarkers extends React.Component {
   constructor(props) {

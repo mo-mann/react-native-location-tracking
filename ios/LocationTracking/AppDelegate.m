@@ -16,7 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [GMSServices provideAPIKey:@"AIzaSyDjn0Uytv_FSUwwpOUTVCvL4vKYU7Ev7VU"];
+  [GMSServices provideAPIKey:@"AIzaSyBDNJGAu0hiNJz4wkBpg4Y9Jh4BIz53Hpg"];
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"LocationTracking"
